@@ -25,7 +25,7 @@ greeter = w3.eth.contract(
 acct = w3.eth.account.privateKeyToAccount(
     '086a4b3fe152bfff7c2442577cedd9a8e60841282cded459d7de8d8f6f234d35')
 
-# tranaction to call one function in onctract
+# tranaction to call one function in onctract////
 # construct_txn1 = greeter.functions.setGreeting('Nihao').buildTransaction({
 #     'from': acct.address,
 #     'nonce': w3.eth.getTransactionCount(acct.address),
