@@ -1,1 +1,1 @@
-# Deploy smart contract on Rinkeby ( Ethereum test net ) 
+# Deploy smart contract on Rinkeby (Ethereum test net) 
