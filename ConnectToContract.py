@@ -1,6 +1,9 @@
 from web3 import Web3
 from solcx import compile_source
 from Solidity_code import *
+from decouple import config
+
+URL_CONNECT_RIKEBY = config("RINKEBY_URL")
 
 compiled_sol = compile_source(
     solidity_code, output_values=["abi", "bin"])
@@ -13,7 +16,7 @@ abi = contract_interface['abi']
 
 # connect to Binance smart chain
 w3 = Web3(Web3.HTTPProvider(
-    "https://rinkeby.infura.io/v3/1ee4a6adc6584fbeaa8c7cea3b8dbbc5"))
+    URL_CONNECT_RIKEBY))
 contract_ = w3.eth.contract(abi=abi, bytecode=bytecode)
 
 # Connect to contract
